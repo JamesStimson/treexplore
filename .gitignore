@@ -12,3 +12,4 @@ vignettes/*.pdf
 rsconnect/
 .DS_Store
 .RData
+README.html
