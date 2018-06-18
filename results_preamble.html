@@ -1,0 +1,24 @@
+<h4>Individual Plots</h4>
+<p> For each point in the MDS plot, there are three detailed representations of data from that sample:
+<ul>
+<li>
+A <strong>transmission network</strong> (see Medians page for more details)</li>
+</li>
+<li>A timed <strong> transmission tree</strong> (see Medians page for more details) </li>
+<li>
+A timed <strong>phylogenetic</strong>  tree. In the case of TransPhylo, this is fixed and supplied as an input. For the other three methods, this is inferred alongside the transmission tree by the MCMC process.
+</ul>
+These three plots are shown beneath the main MDS plot.
+</p>
+
+<p>
+It is important to note that the phylogenetic trees <strong>inform</strong> the transmission trees, but are <strong>not equivalent</strong>. The labels on the tips (always on the right hand side) show the same host identifiers as with the transmission trees. However, the branch points in the trees represent branches in the family tree of the host pathogen, whereas the branches in the transmission tree represent <strong>transmission events</strong> - the jumping of the pathogen from one host to another.
+</p> 
+<p>
+Depending on the method used, different plotting capabilities are available for the phylogenetic trees, so the following is shown:
+<ul>
+<li>For <strong>Beastlier</strong> and <strong>SCOTTI</strong>, a simple tree with the dates indicated at the branch tip labels</li>
+<li>For <strong>PhyBreak</strong>, branches change colour to indicate when transmission between hosts occurs, the three colours being re-used for various hosts</li>
+<li>For <strong>TransPhylo</strong>, each host is individually coloured and transmission events are indicated with red asterisks</li>
+</ul>
+</p>

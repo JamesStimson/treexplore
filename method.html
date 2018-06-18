@@ -1,0 +1,20 @@
+<h4>Sub-heading.</h4>
+
+<p>Though they have their differences, each of the four methods we are evaluating use Monte Carlo Markov Chains (MCMCs) to produce estimates of likely transmission trees. In the main plot on the “Results” page, each point represents one such transmission tree, sampled from the posterior distribution for the appropriate method. For each method, we take the posterior samples at equally spaced intervals along the latter half of the sequence of MCMC results, discarding the first half as the burn-in.  We illustrate the convergence of the MCMC results by plotting the number of MCMC simulations against the posterior likelihoods: see Figures 1-4.</p>
+
+<div style = "background-color: #fcc; width: 100%; height: 100px; border-radius: 3px;">
+    This is a div with a light red background.
+</div>
+
+<p> A metric is used [REF] to define a Euclidean distance between the transmission trees. Combined with the results of the various MCMC implementations used by the four methods, this gives us the ability to compare the results from different algorithms in a rigorous manner. The distances we obtain between trees are in a high dimensional space, so in order to visualise the distances we use multi-dimensional scaling (MDS) techniques to project them down to a two-dimensional representation: this is what is shown in the main MDS plot.  </p>
+
+<p> For each point in the MDS plot, we have
+A timed phylogenetic  tree. In the case of TransPhylo, this is fixed and supplied as an input. For the other three methods, this is inferred alongside the transmission tree by the MCMC process.
+A timed transmission tree. For SCOTTI, transmission times are not readily available, so the tree cannot be well constructed. 
+A transmission network. This directly shows the host-to-host transmissions without reference to the times on which they occured. For TransPhylo and Scotti, this includes inferred unsampled cases. Such cases are not shown for PhyBreak and Beastlier, which do not include them in their models.</p>
+
+<p>
+When displaying the phylogenetic trees, we include information on the host transmissions [where possible].
+The display for the transmission trees shows both the timing of the transmission events (via the upward vertical arrows) and the sampling times (the red circles).
+The three detailed plots are shown larger on separate pages. For the Roetzer data in particular, this allows the detail to be seen more clearly.
+Median Trees.</p> 

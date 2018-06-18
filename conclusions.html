@@ -1,0 +1,30 @@
+<h4>Achievements</h4>
+
+<p>
+	The analysis presented here demonstrates that it is possible to build and implement a rigorous framework to compare disparate transmission tree inference methods. It gives the community a basis from which it is possible to evaluate new and evolving techniques in a way that is statistically analysable.</p>
+	<p>The results obtained give confidence in the methods employed: each method's results form a coherent cluster, and the relationship between the clusters plausibly reflects the differences of the underlying models.</p>
+</p>
+<hr>
+<h4>Issues</h4>
+<p> The methods compared are implemented in many different technologies, using their own bespoke formats for most of their inputs and outputs. A challenge has been to understand and interpret these differences enough in order to start building a pipeline to integrate the essential results. </p>
+<p> Because SCOTTI allows hosts to be re-infected (as opposed to only being able to be infected once) it sometimes generates cycles in the inferred transmission network. This invalidates the assumptions made in the tree distance model <a href="https://arxiv.org/abs/1609.09051">[6]</a>, and for the purpose of this analysis, these cases are excluded. </p>
+<p> Anomalies can occur in the larger timed transmission trees for SCOTTI due to the necessity of applying a simple rule to estimate transmission times.</p>
+
+<hr>
+<h4>Further Work</h4>
+<p> There are several ways in which the work of this project can be developed:
+<ul>
+<li>
+Extension to more methods. <strong>Fourteen</strong> methods are identified in <a href="https://arxiv.org/abs/1609.09051">[6]</a>, including the four analysed here, and there are certainly more available. The challenges here are (a) the investment needed to run them in a consistent manner and (b) to be able to extract comparable information from their outputs. </li>
+
+<li>Investigating the effect of modifying the <strong>priors</strong>. These can have a large impact on the results and associated likelihoods, and can be modified in many different ways.</li>
+
+<li>Statistical analysis of the <strong>posterior</strong> uncertainty.</li>
+
+<li>Further use of visualisation tools. For example, transmission network edges can be <strong>weighted</strong> according to likelihood.</li>
+
+<li>Building a robust pipeline to compare the methods.</li>
+
+</ul>
+</p>
+

@@ -1,0 +1,18 @@
+<p>The use of pathogen genomes to help reconstruct the host-to-host transmission events during infectious disease outbreaks is a relatively new and developing field made possible by the decreasing cost of genome sequencing. Various tools have been developed to implement approaches this problem, based on differing assumptions needed to cope with the combinatorially vast array of both phylogenetic trees and host transmission networks. Here I directly compare <strong>four</strong> of these methods:
+</p>
+<ul>
+<li>Beastlier <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1004613">[1]</a></li>
+<li>PhyBreak <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005495">[2]</a></li>
+<li>SCOTTI <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005130">[3]</a></li>
+<li>TransPhylo <a href="https://academic.oup.com/mbe/article-lookup/doi/10.1093/molbev/msw275">[4]</a></li>
+</ul>
+<p>
+I compare them using <strong>two</strong> real-world data sets:
+<ul>
+<li>A <strong>Norwegian</strong> TB cluster with 13 sampled cases <i>(Data supplied via private communication from Vegard Eldholm).</i></li>
+<li>A TB outbreak in <strong>Hamburg</strong> with 86 sampled cases. <a href="http://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1001387">[5]</a></li>
+</ul>
+The data sets contain genetic information of the pathogen, together with the dates at which samples were taken from the patients.
+</p>
+<p>All four methods use Markov Chain Monte Carlo (MCMC) techniques. I show that it is possible to compare their results quantitatively using a tree distance metric <a href="https://arxiv.org/abs/1609.09051">[6]</a> on samples of the set of MCMC-generated transmission trees.</p>
+<p>I conclude that the metric will be a useful tool in helping to compare and benchmark different algorithms and their assumptions.  </p>

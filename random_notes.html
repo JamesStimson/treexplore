@@ -1,0 +1,12 @@
+<h4>Results Overview</h4>
+
+<p>Each of the four methods being evaluated use MCMCs to produce estimates of likely transmission trees. In the main plot on the “Results” page, each point represents <strong>one</strong> such transmission tree (typically 100 for each method), sampled from the <strong>posterior</strong> distribution for the relevant method. The posterior samples are taken at equally spaced intervals along the latter half of the sequence of MCMC results, discarding the first half as the <strong>burn-in</strong>.  </p>
+<hr>
+<h4>Tree Distance Metric</h4>
+<p>
+Whilst it can sometimes be easy to 'see' whether two trees are similar or not, it is not in general a straightforward matter to define rigorously what a distance between trees might mean. For example, just permuting the arrangement of leaves on the visualisation of a tree can suggest differences where there are none. By contrast, swapping only two nodes over can have a large impact if one or other of them happens to be near the root.
+The metric used here <a href="https://arxiv.org/abs/1609.09051">[6]</a> is based on the depth of comparable nodes within a tree (in the basic sense, meaning the minimum number of steps from the root node) with respect to a 'most recent common ancestor', and in so doing provides an intutively meaningful and <strong>useful</strong> measure. Note that it also handles the existence or otherwise of unsampled cases, but does not reflect the time between transmission events.
+</p>
+<hr>
+<h4>Multidimensional Scaling</h4>
+
